@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+
+  <!-- ▼ SEO 基本（タイトル & メタ） -->
+  <title>札幌｜不眠症・自律神経失調症・腰痛専門のやさしい施術｜本田圭</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="札幌で不眠症・自律神経失調症・腰痛に特化した施術を行う、あん摩マッサージ指圧師 本田圭の公式サイト。眠れない、疲れが取れない、呼吸が浅い方へ、白とベージュの落ち着く空間でやさしい施術を行います。">
+  <meta name="keywords" content="札幌,不眠症,自律神経失調症,腰痛,整体,マッサージ,指圧,睡眠改善,自律神経ケア,本田圭">
+  <meta name="author" content="本田 圭">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://keihonda3.github.io/sleepcare/">
+
+  <!-- ▼ OGP（SNS・AI用） -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="札幌｜不眠症・自律神経・腰痛専門施術｜本田圭">
+  <meta property="og:description" content="不眠症・自律神経失調症・腰痛に特化した施術を行う札幌の施術者 本田圭。白とベージュの落ち着く空間で、眠りと身体を整えます。">
+  <meta property="og:url" content="https://keihonda3.github.io/sleepcare/">
+  <meta property="og:image" content="https://keihonda3.github.io/sleepcare/ogp.jpg">
+
+  <!-- ▼ 構造化データ（AI・Google用） -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HealthAndBeautyBusiness",
+    "name": "不眠症・自律神経・腰痛専門施術｜本田圭",
+    "url": "https://keihonda3.github.io/sleepcare/",
+    "description": "札幌で不眠症・自律神経失調症・腰痛に特化した施術を行う、あん摩マッサージ指圧師 本田圭。",
+    "areaServed": "札幌市",
+    "founder": {
+      "@type": "Person",
+      "name": "本田 圭",
+      "jobTitle": "あん摩マッサージ指圧師"
+    }
+  }
+  </script>
+
+  <!-- ▼ デザイン・レイアウト（白×ベージュ） -->
+  <style>
+    :root {
+      --bg: #faf7f2;
+      --beige: #e8dfd4;
+      --brown: #7e6b5a;
+      --text: #444;
+      --radius: 18px;
+      --shadow: 0 8px 20px rgba(0,0,0,0.08);
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Hiragino Sans', 'Yu Gothic', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.8;
+    }
+
+    a { text-decoration: none; color: var(--brown); }
+
+    /* ▼ ヘッダー（透明→白フェード） */
+    header {
+      width: 100%;
+      position: fixed;
+      top: 0; left: 0;
+      z-index: 100;
+      background: transparent;
+      transition: background 0.4s ease, box-shadow .4s ease;
+    }
+    header.scrolled {
+      background: rgba(255,255,255,0.95);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    .container {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 0 22px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 0;
+    }
+
+    .nav-logo {
+      font-weight: bold;
+      color: var(--brown);
+      letter-spacing: 0.03em;
+      font-size: 1.1rem;
+    }
+
+    .nav-menu a {
+      margin-left: 18px;
+      font-size: 0.92rem;
+      position: relative;
+    }
+
+    .nav-menu a::after {
+      content:"";
+      position:absolute;
+      bottom:-2px;
+      left:0;
+      width:0;
+      height:1px;
+      background: var(--brown);
+      transition: width .3s;
+    }
+    .nav-menu a:hover::after {
+      width:100%;
+    }
+
+    /* ▼ トップ画像 */
+    .hero-image {
+      width: 100%;
+      height: 60vh;
+      min-height: 300px;
+      overflow: hidden;
+      margin-top: 72px;
+    }
+    .hero-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display:block;
+    }
+
+    .hero-textbox {
+      text-align: center;
+      padding: 60px 20px 40px;
+    }
+
+    .hero-title {
+      font-size: 1.9rem;
+      color: var(--brown);
+      margin-bottom: 10px;
+    }
+
+    .hero-en {
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      font-size: 0.78rem;
+      color: #aa9c8c;
+      margin-bottom: 16px;
+    }
+
+    /* ▼ CTA：丸型ボタン */
+    .cta-btn {
+      display: inline-block;
+      background: var(--brown);
+      color: white;
+      padding: 12px 28px;
+      border-radius: 999px;
+      box-shadow: 0 10px 20px rgba(90,70,55,0.3);
+      transition: .25s;
+      font-size: 0.95rem;
+      margin-top: 14px;
+    }
+
+    .cta-btn:hover {
+      box-shadow: 0 12px 24px rgba(90,70,55,0.4);
+      transform: translateY(-2px);
+    }
+
+    /* ▼ セクション共通 */
+    section { padding: 70px 0; }
+
+    .section-title {
+      text-align:center;
+      color: var(--brown);
+      font-size: 1.55rem;
+      margin-bottom: 6px;
+    }
+
+    .section-title::after {
+      content:"";
+      display:block;
+      width: 60px;
+      height: 2px;
+      background: var(--beige);
+      margin: 10px auto 0;
+      border-radius: 999px;
+    }
+
+    .section-sub {
+      text-align:center;
+      color:#666;
+      margin-bottom: 30px;
+      font-size: 0.96rem;
+    }
+
+    .section-en {
+      text-align:center;
+      color:#aa9c8c;
+      letter-spacing:0.12em;
+      font-size:0.75rem;
+      margin-bottom:15px;
+    }
+
+    /* ▼ グリッド */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(270px,1fr));
+      gap: 26px;
+    }
+
+    /* ▼ カード */
+    .card {
+      background: #fff;
+      padding: 22px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      border-left: 5px solid var(--beige);
+    }
+
+    .card h3 {
+      margin-top:0;
+      margin-bottom: 8px;
+      font-size: 1.05rem;
+      color: var(--brown);
+    }
+
+    /* ▼ 症状カード：画像＋テキスト */
+    .symptom-card img {
+      width:100%;
+      height:180px;
+      object-fit:cover;
+      border-radius: var(--radius);
+      margin-bottom: 12px;
+    }
+
+    /* ▼ 施術者紹介：左右配置 */
+    .about-wrap {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .about-photo {
+      width:100%;
+      height: 320px;
+      border-radius: var(--radius);
+      background:white;
+      border: 2px solid var(--beige);
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      color: #8f7f70;
+      font-size:0.9rem;
+      box-shadow: var(--shadow);
+      text-align:center;
+    }
+
+    /* ▼ 施術の流れ：画像つき */
+    .flow-card img {
+      width:100%;
+      height:200px;
+      object-fit:cover;
+      border-radius: var(--radius);
+      margin-bottom: 12px;
+    }
+
+    /* ▼ サブメニュー（横並び） */
+    .subnav {
+      background: #f0ebe4;
+      padding: 24px 0;
+      margin-top: 60px;
+      border-top: 1px solid #e1d9cf;
+      border-bottom: 1px solid #e1d9cf;
+    }
+
+    .subnav-list {
+      display:flex;
+      justify-content:center;
+      flex-wrap:wrap;
+      gap:20px;
+      font-size:0.9rem;
+    }
+
+    .subnav-list a {
+      color: var(--brown);
+      padding-bottom:2px;
+      border-bottom:1px solid transparent;
+      transition:0.25s;
+    }
+
+    .subnav-list a:hover {
+      border-bottom:1px solid var(--brown);
+    }
+
+    /* ▼ ふわっと表示アニメーション */
+    .reveal {
+      opacity:0;
+      transform: translateY(24px);
+      transition: opacity .7s ease-out, transform .7s ease-out;
+    }
+    .reveal.visible {
+      opacity:1;
+      transform: translateY(0);
+    }
+
+    /* ▼ footer */
+    footer {
+      text-align:center;
+      padding: 22px 0 26px;
+      color: #7d6c5c;
+      font-size:0.82rem;
+    }
+
+    /* ▼ レスポンシブ */
+    @media(max-width:820px) {
+      .about-wrap {
+        grid-template-columns: 1fr;
+      }
+      .about-photo { height: 260px; }
+      .hero-title { font-size:1.55rem; }
+    }
+  </style>
+</head>
+
+<body>
+
+<header id="header">
+  <div class="container">
+    <nav>
+      <div class="nav-logo">不眠・自律神経・腰痛ケア｜本田</div>
+      <div class="nav-menu">
+        <a href="#top">トップ</a>
+        <a href="#greeting">あいさつ</a>
+        <a href="#flow">施術の流れ</a>
+        <a href="#voice">施術を受けられた方の声</a>
+        <a href="#sleepwhy">なぜ眠れないのか</a>
+        <a href="#sleepqa">睡眠Q&A</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ▼ TOP画像 -->
+  <div class="hero-image">
+    <!-- ★ここを好きな横長画像に差し替え -->
+    <img src="https://via.placeholder.com/1600x700/eae4dc/ffffff?text=Top+Image"
+         alt="札幌で不眠症・自律神経失調症・腰痛に特化した施術イメージ">
+  </div>
+
+  <div class="hero-textbox reveal">
+    <div class="hero-en">Calm &amp; Slow Care</div>
+    <!-- SEO用 h1 -->
+    <h1 class="hero-title">
+      札幌｜不眠症・自律神経失調症・腰痛専門のやさしい施術｜本田圭
+    </h1>
+    <p>白とベージュのやわらかな空間で、眠りとからだを静かに整えていく施術です。</p>
+    <a href="#contact" class="cta-btn">予約・お問い合わせ</a>
+  </div>
+
+  <!-- ▼ 症状 -->
+  <section id="symptoms">
+    <h2 class="section-title reveal">このようなお悩みはありませんか？</h2>
+    <div class="section-en reveal">Symptoms</div>
+
+    <div class="container grid">
+
+      <!-- 症状① -->
+      <div class="card symptom-card reveal">
+        <img src="https://via.placeholder.com/600x400/ded2c6/ffffff?text=Sleep"
+             alt="眠れない・寝つきが悪い不眠症のイメージ">
+        <h3>眠れない・寝つきが悪い</h3>
+        <p>布団に入ってもなかなか眠れない。夜中に目が覚めて、そのあと眠れなくなる。</p>
+      </div>
+
+      <!-- 症状② -->
+      <div class="card symptom-card reveal">
+        <img src="https://via.placeholder.com/600x400/ded2c6/ffffff?text=Autonomic"
+             alt="自律神経の乱れによる不調のイメージ">
+        <h3>自律神経の乱れ</h3>
+        <p>息苦しさ、胸のざわつき、頭の重さ、胃腸の不調など、検査では異常がないのに疲れが取れない。</p>
+      </div>
+
+      <!-- 症状③ -->
+      <div class="card symptom-card reveal">
+        <img src="https://via.placeholder.com/600x400/ded2c6/ffffff?text=Back+Pain"
+             alt="慢性腰痛に悩む人のイメージ">
+        <h3>慢性腰痛</h3>
+        <p>立ち仕事・座りっぱなしで腰がつらい。朝起きると腰が固まっている感じがする。</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ▼ 施術者紹介 -->
+  <section id="greeting">
+    <h2 class="section-title reveal">施術者あいさつ</h2>
+    <div class="section-en reveal">Greeting</div>
+    <p class="section-sub reveal">やさしく整え、深く休むためのサポートを。</p>
+
+    <div class="container about-wrap">
+
+      <!-- 左：テキスト -->
+      <div class="reveal">
+        <h3 style="color:var(--brown)">本田 圭（あん摩マッサージ指圧師）</h3>
+        <p>
+          不眠症・自律神経失調症・慢性腰痛で悩む方を中心に施術を行っています。
+          強い刺激で無理にほぐすのではなく、「体が自分でゆるむ方向へ導く」やさしい施術を心がけています。
+        </p>
+        <p>
+          眠れない夜が続くと、体だけでなく心もすり減っていきます。
+          白とベージュの落ち着いた空間で、まずは呼吸を深くし、安心して横になれる時間を一緒に作っていければと思っています。
+        </p>
+      </div>
+
+      <!-- 右：画像 -->
+      <div class="about-photo reveal">
+        <!-- ★ここに後で写真を入れてください -->
+        ここに施術者や施術風景の写真が入ります
+      </div>
+    </div>
+  </section>
+
+  <!-- ▼ 施術の流れ -->
+  <section id="flow">
+    <h2 class="section-title reveal">施術の流れ</h2>
+    <div class="section-en reveal">Flow</div>
+
+    <div class="container grid">
+
+      <div class="card flow-card reveal">
+        <img src="https://via.placeholder.com/600x400/ece2d7/ffffff?text=Reservation"
+             alt="施術予約をしているイメージ">
+        <h3>1. ご予約</h3>
+        <p>治療院の予約サイト・電話・LINEなどからご予約いただけます。</p>
+      </div>
+
+      <div class="card flow-card reveal">
+        <img src="https://via.placeholder.com/600x400/ece2d7/ffffff?text=Counseling"
+             alt="カウンセリングのイメージ">
+        <h3>2. カウンセリング</h3>
+        <p>眠りの状態・生活リズム・お悩みを丁寧にお伺いします。睡眠薬のご使用状況なども差し支えない範囲でお知らせください。</p>
+      </div>
+
+      <div class="card flow-card reveal">
+        <img src="https://via.placeholder.com/600x400/ece2d7/ffffff?text=Check"
+             alt="体の状態チェックのイメージ">
+        <h3>3. 状態チェック</h3>
+        <p>姿勢・呼吸の深さ・筋肉の緊張などを確認し、負担がかかっている部分を一緒に見ていきます。</p>
+      </div>
+
+      <div class="card flow-card reveal">
+        <img src="https://via.placeholder.com/600x400/ece2d7/ffffff?text=Treatment"
+             alt="やさしい施術を行う様子">
+        <h3>4. 施術</h3>
+        <p>強い刺激は使わず、体が自然とゆるみやすくなるように、呼吸に合わせてやさしくアプローチします。</p>
+      </div>
+
+      <div class="card flow-card reveal">
+        <img src="https://via.placeholder.com/600x400/ece2d7/ffffff?text=Advice"
+             alt="セルフケアの説明風景">
+        <h3>5. ご説明・今後のご提案</h3>
+        <p>施術後の変化を一緒に確認し、セルフケアや通うペースなどをご提案いたします。</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ▼ 施術を受けられた方の声 -->
+  <section id="voice">
+    <h2 class="section-title reveal">施術を受けられた方の声</h2>
+    <div class="section-en reveal">Voices</div>
+
+    <div class="container grid">
+      <div class="card reveal">
+        <h3>30代女性 / 不眠でのご来院</h3>
+        <p>「夜中に何度も目が覚めていましたが、少しずつ続けるうちに、起きる回数が減ってきました。」</p>
+      </div>
+      <div class="card reveal">
+        <h3>40代男性 / 腰痛と睡眠の不調</h3>
+        <p>「腰が楽になると同時に、寝つきも良くなってきたように感じます。強い刺激が苦手な自分には合っていました。」</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ▼ なぜ眠れないのか -->
+  <section id="sleepwhy">
+    <h2 class="section-title reveal">なぜ眠れないのか</h2>
+    <div class="section-en reveal">Why can't we sleep?</div>
+
+    <div class="container card reveal" style="max-width:760px;margin:auto;">
+      <p>
+        不眠症の多くは、脳と自律神経の「オン・オフ」の切り替えがうまくいかなくなることで起こります。
+        日中に緊張やストレスが続くと、交感神経（活動モード）が優位になり、夜になっても身体が休息モードに入りにくくなります。
+      </p>
+      <p>
+        また、ストレスや姿勢の乱れによって呼吸が浅くなると、副交感神経（リラックスモード）が働きにくくなり、
+        布団に入ってもなかなか眠れない、夜中に目が覚めてしまう、といった状態が続いてしまいます。
+      </p>
+      <p>
+        当院の施術では、首や肩・背中・お腹まわりなど、自律神経や呼吸に関わる部分の緊張をやさしくゆるめることで、
+        「眠れるための土台」を整えていきます。詳しくは <a href="#sleepqa">睡眠Q&amp;A</a> もご覧ください。
+      </p>
+    </div>
+  </section>
+
+  <!-- ▼ 睡眠Q&A -->
+  <section id="sleepqa">
+    <h2 class="section-title reveal">睡眠Q&amp;A</h2>
+    <div class="section-en reveal">Sleep Q&amp;A</div>
+
+    <div class="container grid">
+      <div class="card reveal">
+        <h3>Q. 睡眠薬を飲んでいても施術を受けられますか？</h3>
+        <p>A. はい、可能です。お薬の内容や体調を伺いながら、からだに負担のない範囲で施術を行います。</p>
+      </div>
+      <div class="card reveal">
+        <h3>Q. 何回くらい通うと変化が出ますか？</h3>
+        <p>A. 個人差はありますが、2〜3回で「少し楽になった」と感じる方も多く、継続することで安定しやすくなります。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ▼ 予約・お問い合わせ -->
+  <section id="contact">
+    <h2 class="section-title reveal">ご予約・お問い合わせ</h2>
+    <div class="section-en reveal">Contact</div>
+
+    <div class="container card reveal" style="max-width:760px;margin:auto;">
+      <p><strong>予約方法：</strong> 勤務先治療院の予約サイト・電話・LINE などから受付しています。</p>
+      <p>
+        <strong>メールでのお問い合わせ：</strong><br>
+        <a href="mailto:keihonda33@gmail.com">keihonda33@gmail.com</a> 宛てにご相談内容をお送りください。
+      </p>
+      <p style="font-size:0.88rem;color:#777;">
+        「不眠・自律神経のページを見ました。本田さんの施術について相談したいです。」など、
+        簡単な一文を添えていただけるとスムーズです。
+      </p>
+      <a href="#top" class="cta-btn" style="margin-top:16px;">トップへ戻る</a>
+    </div>
+  </section>
+
+  <!-- ▼ 下部メニュー -->
+  <div class="subnav">
+    <div class="container subnav-list">
+      <a href="#top">トップページ</a>
+      <a href="#greeting">あいさつ</a>
+      <a href="#flow">施術の流れ</a>
+      <a href="#voice">施術を受けられた方の声</a>
+      <a href="#sleepwhy">なぜ眠れないのか</a>
+      <a href="#sleepqa">睡眠Q&amp;A</a>
+      <a href="#contact">予約・お問い合わせ</a>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  <div>© 不眠症・自律神経失調症・腰痛ケア 施術者 本田圭</div>
+</footer>
+
+<!-- ▼ ヘッダー切り替え＋ふわっと表示 -->
+<script>
+  // ヘッダー透明→白
+  const header = document.getElementById('header');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 30) header.classList.add('scrolled');
+    else header.classList.remove('scrolled');
+  });
+
+  // ふわっと表示
+  const items = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{
+      if(e.isIntersecting){
+        e.target.classList.add('visible');
+        io.unobserve(e.target);
+      }
+    });
+  },{threshold:0.15});
+  items.forEach(i=>io.observe(i));
+</script>
+
+</body>
+</html>
